@@ -1,0 +1,209 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+header {
+  background-color: #023048;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+  color: white;
+}
+.stars {
+  color: gold;
+  font-size: 10px;
+  margin-left: 5px;
+  padding: 0;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Iceymountain.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur(5px);
+  z-index: -1;
+}
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+}
+nav {
+  overflow: hidden;
+  background: transparent;
+  color: #023048;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 50px;
+  position: relative;
+  z-index: 1;
+}
+nav.logo {
+  float: none;
+  font-size: 12px;
+}
+.nav-right {
+  display: flex;
+  gap: 60px;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 0px;
+}
+nav li {
+  float: right;
+  color: #023048;
+  text-align: center;
+  padding: 14px 17px;
+  list-style: none;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+}
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-bar input {
+  padding-left: 35px;
+  padding: 10px 10px 10px 35px;
+  width: 200px;
+}
+.search-bar .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+nav ul.icons-list li {
+  padding: 14px 2px;
+}
+.icons {
+  font-size: 15px;
+  margin: 0 10px;
+  padding: 0px 0px;
+}
+
+.img-icon {
+  /* font-size: 16px; */
+  width: 15px;
+  height: auto;
+}
+/* input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 35%; */
+/* } */
+main {
+  margin: 0;
+  padding: 30px 30px;
+  /* text-align: center; */
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  gap: 100px;
+}
+.content {
+  max-width: 800px;
+}
+h1 p {
+  display: flex;
+  justify-content: flex-start;
+}
+h1 {
+  font-size: 40px;
+}
+.highlight {
+  color: #023048;
+  font-weight: 900;
+  font-size: 60px;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+}
+.button-one {
+  display: flex;
+  background-color: #023048;
+  color: beige;
+  padding: 15px 14px;
+  width: auto;
+}
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 0 40px;
+}
+.trip-type {
+  flex: 0 1 auto;
+}
+.my-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.icon-x {
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.special-offers {
+  background-color: #023048;
+  color: beige;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 80px;
+  gap: 40px;
+  flex: 0 1 400px;
+  padding: 30px 50px;
+}
+.offer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.offer-text h3 {
+  margin-bottom: 0;
+}
+.offer-text p {
+  margin-top: 0;
+}
+.learn {
+  padding: 15px;
+}
